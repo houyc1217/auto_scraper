@@ -1,0 +1,18 @@
+sites:
+  reuters:
+    name: "Reuters"
+    base_url: "https://www.reuters.com/markets/commodities/metals/news/"
+    request_delay: 5
+    max_retries: 3
+    cookies_enabled: true
+    proxy_list: []
+    parser:
+      article_selector: "article.media-story-card, div.story-card"
+      title_selector: "h1.article-header__title__3Y2hk, h3.story-card__heading__2mp9_"
+      body_selector: "div.article-body__content__17Yit, div.article__content"
+      date_selector: "time.article-header__date__3rHBz"
+
+dify:
+  api_endpoint: "https://api.dify.ai"
+  api_key: "dataset-pv2t458uX9nLDZwASmWMlPS2"
+  dataset_id: "e18fe57d-9500-4a37-94d3-d4333112d18e"
